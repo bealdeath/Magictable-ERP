@@ -12051,3 +12051,6 @@
 2024-10-04 17:48:02,733 Result is kept for 600 seconds
 2024-10-04 17:48:02,934 home-magic-frappe-bench:default: Job OK (magictable.info::scheduled_job::frappe.email.queue.flush)
 2024-10-04 17:48:02,934 Result is kept for 600 seconds
+2024-10-04 17:50:44,978 home-magic-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='magictable.info', user='Administrator') (magictable.info::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2024-10-04 17:50:45,315 home-magic-frappe-bench:default: Job OK (magictable.info::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2024-10-04 17:50:45,315 Result is kept for 600 seconds
