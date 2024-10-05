@@ -1,0 +1,924 @@
+2024-09-22 16:16:29,350 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2024-09-24 12:43:57,256 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_a0761ef742928f6c'@'localhost' (using password: YES)")
+2024-09-24 12:44:57,715 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_a0761ef742928f6c'@'localhost' (using password: YES)")
+2024-09-24 12:45:57,815 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_a0761ef742928f6c'@'localhost' (using password: YES)")
+2024-09-24 12:46:57,881 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_a0761ef742928f6c'@'localhost' (using password: YES)")
+2024-09-25 15:05:34,573 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'magic'@'localhost'")
+2024-09-25 15:06:34,780 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'magic'@'localhost'")
+2024-09-25 15:07:34,863 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'magic'@'localhost'")
+2024-09-25 15:08:34,970 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'magic'@'localhost'")
+2024-09-25 15:09:35,038 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1698, "Access denied for user 'magic'@'localhost'")
+2024-09-25 17:01:30,581 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-09-25 17:01:34,055 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-09-25 17:01:34,066 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for magictable.info
+2024-09-25 17:01:34,070 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-25 17:01:34,072 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-25 17:01:34,074 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-25 17:01:34,076 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-25 17:01:34,077 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-25 17:01:34,079 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-25 19:32:36,324 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails because it was found in queue for magictable.info
+2024-09-25 19:32:38,030 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for magictable.info
+2024-09-25 19:32:38,040 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for magictable.info
+2024-09-25 19:32:38,042 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for magictable.info
+2024-09-25 19:32:38,044 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for magictable.info
+2024-09-25 19:32:38,045 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for magictable.info
+2024-09-25 19:32:38,046 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for magictable.info
+2024-09-25 19:32:38,049 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-09-25 19:32:38,050 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-09-25 19:32:38,058 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for magictable.info
+2024-09-25 19:32:38,059 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for magictable.info
+2024-09-25 19:32:38,061 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for magictable.info
+2024-09-25 19:32:38,062 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for magictable.info
+2024-09-25 19:32:38,064 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for magictable.info
+2024-09-25 19:32:38,065 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for magictable.info
+2024-09-25 19:32:38,066 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for magictable.info
+2024-09-25 19:32:38,068 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-09-25 19:32:38,069 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-09-25 19:32:38,071 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-09-25 19:32:38,073 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-25 19:32:38,092 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-25 19:32:38,094 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-25 19:32:38,095 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-25 19:32:38,097 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-25 19:32:38,098 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-25 19:32:38,100 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-26 11:31:34,274 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails because it was found in queue for magictable.info
+2024-09-26 11:31:35,833 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for magictable.info
+2024-09-26 11:31:35,851 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for magictable.info
+2024-09-26 11:31:35,854 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for magictable.info
+2024-09-26 11:31:35,856 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for magictable.info
+2024-09-26 11:31:35,859 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for magictable.info
+2024-09-26 11:31:35,862 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for magictable.info
+2024-09-26 11:31:35,866 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-09-26 11:31:35,869 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-09-26 11:31:35,883 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for magictable.info
+2024-09-26 11:31:35,886 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for magictable.info
+2024-09-26 11:31:35,888 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for magictable.info
+2024-09-26 11:31:35,891 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for magictable.info
+2024-09-26 11:31:35,894 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for magictable.info
+2024-09-26 11:31:35,896 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for magictable.info
+2024-09-26 11:31:35,899 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for magictable.info
+2024-09-26 11:31:35,902 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-09-26 11:31:35,905 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-09-26 11:31:35,908 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-09-26 11:31:35,912 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-26 11:31:35,915 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-26 11:31:35,918 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-26 11:31:35,921 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-26 11:31:35,923 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-26 11:31:35,926 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-26 11:31:35,928 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-26 11:32:36,611 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for magictable.info
+2024-09-26 11:32:36,614 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for magictable.info
+2024-09-26 11:32:36,616 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for magictable.info
+2024-09-26 11:32:36,619 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for magictable.info
+2024-09-26 11:32:36,651 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-09-26 11:32:36,654 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-09-26 11:32:36,657 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-09-26 11:32:36,768 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-26 11:32:36,771 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-26 11:32:36,774 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-26 11:32:36,776 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-26 11:32:36,779 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-26 11:32:36,782 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-26 11:32:36,787 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-26 16:53:13,147 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for magictable.info
+2024-09-26 16:53:13,149 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for magictable.info
+2024-09-26 16:53:13,151 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for magictable.info
+2024-09-26 16:53:13,153 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for magictable.info
+2024-09-26 16:53:13,155 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for magictable.info
+2024-09-26 16:53:13,157 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for magictable.info
+2024-09-26 16:53:13,158 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for magictable.info
+2024-09-26 16:53:13,160 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for magictable.info
+2024-09-26 16:53:13,162 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for magictable.info
+2024-09-26 16:53:13,164 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for magictable.info
+2024-09-26 16:53:13,166 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for magictable.info
+2024-09-26 16:53:13,169 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for magictable.info
+2024-09-26 16:53:13,171 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for magictable.info
+2024-09-26 16:53:13,174 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for magictable.info
+2024-09-26 16:53:13,175 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-09-26 16:53:13,177 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-09-26 16:53:13,181 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for magictable.info
+2024-09-26 16:53:13,182 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for magictable.info
+2024-09-26 16:53:13,184 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed because it was found in queue for magictable.info
+2024-09-26 16:53:13,187 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for magictable.info
+2024-09-26 16:53:13,189 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for magictable.info
+2024-09-26 16:53:13,193 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for magictable.info
+2024-09-26 16:53:13,195 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for magictable.info
+2024-09-26 16:53:13,196 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for magictable.info
+2024-09-26 16:53:13,198 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for magictable.info
+2024-09-26 16:53:13,199 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for magictable.info
+2024-09-26 16:53:13,201 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for magictable.info
+2024-09-26 16:53:13,203 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for magictable.info
+2024-09-26 16:53:13,204 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for magictable.info
+2024-09-26 16:53:13,206 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for magictable.info
+2024-09-26 16:53:13,208 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for magictable.info
+2024-09-26 16:53:13,210 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for magictable.info
+2024-09-26 16:53:13,212 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for magictable.info
+2024-09-26 16:53:13,214 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for magictable.info
+2024-09-26 16:53:13,217 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for magictable.info
+2024-09-26 16:53:13,219 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-09-26 16:53:13,221 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-09-26 16:53:13,224 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-09-26 16:53:13,226 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for magictable.info
+2024-09-26 16:53:13,228 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for magictable.info
+2024-09-26 16:53:13,230 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-26 16:53:13,232 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-26 16:53:13,235 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-26 16:53:13,237 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-26 16:53:13,239 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-26 16:53:13,241 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-26 16:53:13,243 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-26 17:18:19,169 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 78, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 96, in enqueue_events
+    if job_type.enqueue():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 72, in enqueue
+    if not self.is_job_in_queue():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 93, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 542, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 547, in get_job_status
+    job = get_job(job_id)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 554, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
+    connection.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2024-09-27 10:41:40,587 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-27 16:46:19,514 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 78, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 93, in enqueue_events
+    for job_type in frappe.get_all("Scheduled Job Type", filters={"stopped": 0}, fields="*"):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 2064, in get_all
+    return get_list(doctype, *args, **kwargs)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 2039, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 206, in build_and_run
+    args = self.prepare_args()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 246, in prepare_args
+    self.build_conditions()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 580, in build_conditions
+    self.build_filter_conditions(self.filters, self.conditions)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 601, in build_filter_conditions
+    conditions.append(self.prepare_filter_condition(f))
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 712, in prepare_filter_condition
+    f = get_filter(self.doctype, f, additional_filters_config)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/data.py", line 1828, in get_filter
+    meta = frappe.get_meta(f.doctype)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 119, in __init__
+    self.process()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 142, in process
+    self.set_custom_permissions()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 524, in set_custom_permissions
+    custom_perms = frappe.get_all(
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 2064, in get_all
+    return get_list(doctype, *args, **kwargs)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 2039, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 191, in execute
+    result = self.build_and_run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 206, in build_and_run
+    args = self.prepare_args()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 246, in prepare_args
+    self.build_conditions()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 580, in build_conditions
+    self.build_filter_conditions(self.filters, self.conditions)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 601, in build_filter_conditions
+    conditions.append(self.prepare_filter_condition(f))
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/db_query.py", line 712, in prepare_filter_condition
+    f = get_filter(self.doctype, f, additional_filters_config)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/data.py", line 1837, in get_filter
+    df = frappe.get_meta(f.doctype).get_field(f.fieldname) if f.doctype else None
+  File "/home/magic/frappe-bench/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/model/document.py", line 167, in load_from_db
+    d = frappe.db.get_value(
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 512, in get_value
+    result = self.get_values(
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 616, in get_values
+    out = self._get_values_from_table(
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 889, in _get_values_from_table
+    return query.run(as_dict=as_dict, debug=debug, update=update, run=run, pluck=pluck)
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 227, in sql
+    self._cursor.execute(query, values)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 798, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2024-09-27 21:39:46,324 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for magictable.info
+2024-09-27 21:39:47,401 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-09-27 21:39:47,403 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-09-27 21:39:47,405 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-09-28 21:51:48,961 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-09-30 12:01:28,540 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-30 12:01:30,141 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-30 12:01:30,143 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-30 12:01:30,145 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-30 12:01:30,146 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-30 12:01:30,148 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-09-30 16:16:33,545 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-09-30 16:16:34,691 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-09-30 16:16:34,705 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-09-30 16:16:34,707 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-09-30 16:16:34,709 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-09-30 16:16:34,711 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-09-30 16:16:34,713 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-09-30 16:16:34,715 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-10-01 08:36:13,617 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info
+2024-10-01 13:25:51,030 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-01 13:26:47,129 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-01 13:27:43,120 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-01 13:28:39,084 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-01 13:29:35,082 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-01 13:30:32,396 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'magic'@'localhost' (using password: NO)")
+2024-10-03 22:41:56,156 ERROR scheduler Exception in Enqueue Events for Site magictable.info
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 782, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/magic/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 834, in get_single_value
+    ).run()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 204, in sql
+    self.connect()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/database.py", line 109, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 107, in get_connection
+    conn = self._get_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 113, in _get_connection
+    return self.create_connection()
+  File "/home/magic/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 116, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 744, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/home/magic/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 788, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 104] Connection reset by peer)')
+2024-10-04 08:30:33,397 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_assignment_schedule.shift_assignment_schedule.process_auto_shift_creation because it was found in queue for magictable.info
+2024-10-04 08:30:33,775 ERROR scheduler Skipped queueing hrms.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts because it was found in queue for magictable.info
+2024-10-04 08:30:33,779 ERROR scheduler Skipped queueing hrms.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails because it was found in queue for magictable.info
+2024-10-04 08:30:33,781 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for magictable.info
+2024-10-04 08:30:33,783 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for magictable.info
+2024-10-04 08:30:33,785 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for magictable.info
+2024-10-04 08:30:33,796 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for magictable.info
+2024-10-04 08:30:33,798 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for magictable.info
+2024-10-04 08:30:33,800 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for magictable.info
+2024-10-04 08:30:33,801 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for magictable.info
+2024-10-04 08:30:33,803 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for magictable.info
+2024-10-04 08:30:33,809 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for magictable.info
+2024-10-04 08:30:33,811 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for magictable.info
+2024-10-04 08:30:33,820 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for magictable.info
+2024-10-04 08:30:33,822 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for magictable.info
+2024-10-04 08:30:33,824 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for magictable.info
+2024-10-04 08:30:33,826 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for magictable.info
+2024-10-04 08:30:33,827 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for magictable.info
+2024-10-04 08:30:33,829 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for magictable.info
+2024-10-04 08:30:33,831 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for magictable.info
+2024-10-04 08:30:33,833 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for magictable.info
+2024-10-04 08:30:33,835 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for magictable.info
+2024-10-04 08:30:33,837 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for magictable.info
+2024-10-04 08:30:33,841 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for magictable.info
+2024-10-04 08:30:33,843 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for magictable.info
+2024-10-04 08:30:33,844 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for magictable.info
+2024-10-04 08:30:33,846 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for magictable.info
+2024-10-04 08:30:33,848 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for magictable.info
+2024-10-04 08:30:33,849 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for magictable.info
+2024-10-04 08:30:33,851 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for magictable.info

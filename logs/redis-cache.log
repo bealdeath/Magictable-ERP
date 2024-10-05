@@ -1,0 +1,233 @@
+4810:signal-handler (1727714185) Received SIGTERM scheduling shutdown...
+4810:M 30 Sep 2024 12:36:25.900 # User requested shutdown...
+4810:M 30 Sep 2024 12:36:25.966 * Removing the pid file.
+4810:M 30 Sep 2024 12:36:25.995 # Redis is now ready to exit, bye bye...
+5902:C 30 Sep 2024 12:36:45.343 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5902:C 30 Sep 2024 12:36:45.343 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=5902, just started
+5902:C 30 Sep 2024 12:36:45.343 # Configuration loaded
+5902:M 30 Sep 2024 12:36:45.344 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5902:M 30 Sep 2024 12:36:45.489 * Running mode=standalone, port=13000.
+5902:M 30 Sep 2024 12:36:45.489 # Server initialized
+5902:M 30 Sep 2024 12:36:45.490 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+5902:M 30 Sep 2024 12:36:45.494 * Ready to accept connections
+5902:signal-handler (1727714569) Received SIGTERM scheduling shutdown...
+5902:M 30 Sep 2024 12:42:49.084 # User requested shutdown...
+5902:M 30 Sep 2024 12:42:49.085 * Removing the pid file.
+5902:M 30 Sep 2024 12:42:49.085 # Redis is now ready to exit, bye bye...
+17708:C 30 Sep 2024 12:43:15.338 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+17708:C 30 Sep 2024 12:43:15.338 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=17708, just started
+17708:C 30 Sep 2024 12:43:15.338 # Configuration loaded
+17708:M 30 Sep 2024 12:43:15.338 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+17708:M 30 Sep 2024 12:43:15.339 * Running mode=standalone, port=13000.
+17708:M 30 Sep 2024 12:43:15.339 # Server initialized
+17708:M 30 Sep 2024 12:43:15.339 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+17708:M 30 Sep 2024 12:43:15.341 * Ready to accept connections
+17708:signal-handler (1727714937) Received SIGTERM scheduling shutdown...
+17708:M 30 Sep 2024 12:48:57.046 # User requested shutdown...
+17708:M 30 Sep 2024 12:48:57.046 * Removing the pid file.
+17708:M 30 Sep 2024 12:48:57.046 # Redis is now ready to exit, bye bye...
+18451:C 30 Sep 2024 12:48:57.342 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+18451:C 30 Sep 2024 12:48:57.342 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=18451, just started
+18451:C 30 Sep 2024 12:48:57.342 # Configuration loaded
+18451:M 30 Sep 2024 12:48:57.342 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+18451:M 30 Sep 2024 12:48:57.343 * Running mode=standalone, port=13000.
+18451:M 30 Sep 2024 12:48:57.343 # Server initialized
+18451:M 30 Sep 2024 12:48:57.343 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+18451:M 30 Sep 2024 12:48:57.345 * Ready to accept connections
+18451:signal-handler (1727715382) Received SIGTERM scheduling shutdown...
+18451:M 30 Sep 2024 12:56:22.221 # User requested shutdown...
+18451:M 30 Sep 2024 12:56:22.221 * Removing the pid file.
+18451:M 30 Sep 2024 12:56:22.251 # Redis is now ready to exit, bye bye...
+18827:C 30 Sep 2024 12:56:23.588 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+18827:C 30 Sep 2024 12:56:23.588 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=18827, just started
+18827:C 30 Sep 2024 12:56:23.588 # Configuration loaded
+18827:M 30 Sep 2024 12:56:23.589 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+18827:M 30 Sep 2024 12:56:23.590 * Running mode=standalone, port=13000.
+18827:M 30 Sep 2024 12:56:23.590 # Server initialized
+18827:M 30 Sep 2024 12:56:23.590 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+18827:M 30 Sep 2024 12:56:23.592 * Ready to accept connections
+18827:signal-handler (1727721423) Received SIGTERM scheduling shutdown...
+18827:M 30 Sep 2024 14:37:03.292 # User requested shutdown...
+18827:M 30 Sep 2024 14:37:03.292 * Removing the pid file.
+18827:M 30 Sep 2024 14:37:03.292 # Redis is now ready to exit, bye bye...
+19717:C 30 Sep 2024 14:37:26.587 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+19717:C 30 Sep 2024 14:37:26.587 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=19717, just started
+19717:C 30 Sep 2024 14:37:26.587 # Configuration loaded
+19717:M 30 Sep 2024 14:37:26.588 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+19717:M 30 Sep 2024 14:37:26.737 * Running mode=standalone, port=13000.
+19717:M 30 Sep 2024 14:37:26.789 # Server initialized
+19717:M 30 Sep 2024 14:37:26.789 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+19717:M 30 Sep 2024 14:37:26.791 * Ready to accept connections
+19717:signal-handler (1727726953) Received SIGTERM scheduling shutdown...
+19717:M 30 Sep 2024 16:09:13.385 # User requested shutdown...
+19717:M 30 Sep 2024 16:09:13.385 * Removing the pid file.
+19717:M 30 Sep 2024 16:09:13.427 # Redis is now ready to exit, bye bye...
+21719:C 30 Sep 2024 16:09:13.641 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+21719:C 30 Sep 2024 16:09:13.641 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=21719, just started
+21719:C 30 Sep 2024 16:09:13.641 # Configuration loaded
+21719:M 30 Sep 2024 16:09:13.642 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+21719:M 30 Sep 2024 16:09:13.646 * Running mode=standalone, port=13000.
+21719:M 30 Sep 2024 16:09:13.646 # Server initialized
+21719:M 30 Sep 2024 16:09:13.646 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+21719:M 30 Sep 2024 16:09:13.664 * Ready to accept connections
+21719:signal-handler (1727798981) Received SIGTERM scheduling shutdown...
+21719:M 01 Oct 2024 12:09:41.089 # User requested shutdown...
+21719:M 01 Oct 2024 12:09:41.145 * Removing the pid file.
+21719:M 01 Oct 2024 12:09:41.146 # Redis is now ready to exit, bye bye...
+27168:C 01 Oct 2024 12:09:57.980 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+27168:C 01 Oct 2024 12:09:57.980 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=27168, just started
+27168:C 01 Oct 2024 12:09:57.980 # Configuration loaded
+27168:M 01 Oct 2024 12:09:57.981 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+27168:M 01 Oct 2024 12:09:58.137 * Running mode=standalone, port=13000.
+27168:M 01 Oct 2024 12:09:58.137 # Server initialized
+27168:M 01 Oct 2024 12:09:58.137 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+27168:M 01 Oct 2024 12:09:58.157 * Ready to accept connections
+27168:signal-handler (1727799235) Received SIGTERM scheduling shutdown...
+27168:M 01 Oct 2024 12:13:55.548 # User requested shutdown...
+27168:M 01 Oct 2024 12:13:55.597 * Removing the pid file.
+27168:M 01 Oct 2024 12:13:55.797 # Redis is now ready to exit, bye bye...
+27472:C 01 Oct 2024 12:13:56.628 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+27472:C 01 Oct 2024 12:13:56.628 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=27472, just started
+27472:C 01 Oct 2024 12:13:56.628 # Configuration loaded
+27472:M 01 Oct 2024 12:13:56.628 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+27472:M 01 Oct 2024 12:13:56.784 * Running mode=standalone, port=13000.
+27472:M 01 Oct 2024 12:13:56.784 # Server initialized
+27472:M 01 Oct 2024 12:13:56.784 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+27472:M 01 Oct 2024 12:13:56.823 * Ready to accept connections
+27472:signal-handler (1727801485) Received SIGTERM scheduling shutdown...
+27472:M 01 Oct 2024 12:51:25.572 # User requested shutdown...
+27472:M 01 Oct 2024 12:51:25.572 * Removing the pid file.
+27472:M 01 Oct 2024 12:51:25.634 # Redis is now ready to exit, bye bye...
+27871:C 01 Oct 2024 12:51:27.190 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+27871:C 01 Oct 2024 12:51:27.190 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=27871, just started
+27871:C 01 Oct 2024 12:51:27.190 # Configuration loaded
+27871:M 01 Oct 2024 12:51:27.191 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+27871:M 01 Oct 2024 12:51:27.192 * Running mode=standalone, port=13000.
+27871:M 01 Oct 2024 12:51:27.192 # Server initialized
+27871:M 01 Oct 2024 12:51:27.192 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+27871:M 01 Oct 2024 12:51:27.195 * Ready to accept connections
+27871:signal-handler (1727801500) Received SIGTERM scheduling shutdown...
+27871:M 01 Oct 2024 12:51:40.224 # User requested shutdown...
+27871:M 01 Oct 2024 12:51:40.224 * Removing the pid file.
+27871:M 01 Oct 2024 12:51:40.224 # Redis is now ready to exit, bye bye...
+27909:C 01 Oct 2024 12:51:41.415 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+27909:C 01 Oct 2024 12:51:41.415 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=27909, just started
+27909:C 01 Oct 2024 12:51:41.416 # Configuration loaded
+27909:M 01 Oct 2024 12:51:41.417 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+27909:M 01 Oct 2024 12:51:41.418 * Running mode=standalone, port=13000.
+27909:M 01 Oct 2024 12:51:41.418 # Server initialized
+27909:M 01 Oct 2024 12:51:41.418 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+27909:M 01 Oct 2024 12:51:41.422 * Ready to accept connections
+27909:signal-handler (1727802125) Received SIGTERM scheduling shutdown...
+27909:M 01 Oct 2024 13:02:05.360 # User requested shutdown...
+27909:M 01 Oct 2024 13:02:05.360 * Removing the pid file.
+27909:M 01 Oct 2024 13:02:05.408 # Redis is now ready to exit, bye bye...
+28326:C 01 Oct 2024 13:02:32.973 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+28326:C 01 Oct 2024 13:02:32.973 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=28326, just started
+28326:C 01 Oct 2024 13:02:32.973 # Configuration loaded
+28326:M 01 Oct 2024 13:02:32.974 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+28326:M 01 Oct 2024 13:02:33.120 * Running mode=standalone, port=13000.
+28326:M 01 Oct 2024 13:02:33.121 # Server initialized
+28326:M 01 Oct 2024 13:02:33.121 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+28326:M 01 Oct 2024 13:02:33.123 * Ready to accept connections
+28326:signal-handler (1727802822) Received SIGTERM scheduling shutdown...
+28326:M 01 Oct 2024 13:13:42.982 # User requested shutdown...
+28326:M 01 Oct 2024 13:13:42.982 * Removing the pid file.
+28326:M 01 Oct 2024 13:13:43.123 # Redis is now ready to exit, bye bye...
+28681:C 01 Oct 2024 13:14:26.686 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+28681:C 01 Oct 2024 13:14:26.686 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=28681, just started
+28681:C 01 Oct 2024 13:14:26.686 # Configuration loaded
+28681:M 01 Oct 2024 13:14:26.687 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+28681:M 01 Oct 2024 13:14:27.002 * Running mode=standalone, port=13000.
+28681:M 01 Oct 2024 13:14:27.002 # Server initialized
+28681:M 01 Oct 2024 13:14:27.002 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+28681:M 01 Oct 2024 13:14:27.023 * Ready to accept connections
+28681:signal-handler (1727803896) Received SIGTERM scheduling shutdown...
+28681:M 01 Oct 2024 13:31:36.837 # User requested shutdown...
+28681:M 01 Oct 2024 13:31:36.837 * Removing the pid file.
+28681:M 01 Oct 2024 13:31:36.933 # Redis is now ready to exit, bye bye...
+28833:C 01 Oct 2024 13:31:37.803 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+28833:C 01 Oct 2024 13:31:37.803 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=28833, just started
+28833:C 01 Oct 2024 13:31:37.803 # Configuration loaded
+28833:M 01 Oct 2024 13:31:37.804 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+28833:M 01 Oct 2024 13:31:37.806 * Running mode=standalone, port=13000.
+28833:M 01 Oct 2024 13:31:37.806 # Server initialized
+28833:M 01 Oct 2024 13:31:37.806 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+28833:M 01 Oct 2024 13:31:37.809 * Ready to accept connections
+28833:signal-handler (1727822704) Received SIGTERM scheduling shutdown...
+28833:M 01 Oct 2024 18:45:04.103 # User requested shutdown...
+28833:M 01 Oct 2024 18:45:04.210 * Removing the pid file.
+28833:M 01 Oct 2024 18:45:04.309 # Redis is now ready to exit, bye bye...
+29877:C 01 Oct 2024 18:45:07.094 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+29877:C 01 Oct 2024 18:45:07.094 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=29877, just started
+29877:C 01 Oct 2024 18:45:07.094 # Configuration loaded
+29877:M 01 Oct 2024 18:45:07.095 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+29877:M 01 Oct 2024 18:45:07.306 * Running mode=standalone, port=13000.
+29877:M 01 Oct 2024 18:45:07.306 # Server initialized
+29877:M 01 Oct 2024 18:45:07.306 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+29877:M 01 Oct 2024 18:45:07.309 * Ready to accept connections
+29877:signal-handler (1727823068) Received SIGTERM scheduling shutdown...
+29877:M 01 Oct 2024 18:51:08.893 # User requested shutdown...
+29877:M 01 Oct 2024 18:51:08.893 * Removing the pid file.
+29877:M 01 Oct 2024 18:51:08.911 # Redis is now ready to exit, bye bye...
+29986:C 01 Oct 2024 18:51:09.838 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+29986:C 01 Oct 2024 18:51:09.838 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=29986, just started
+29986:C 01 Oct 2024 18:51:09.838 # Configuration loaded
+29986:M 01 Oct 2024 18:51:09.839 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+29986:M 01 Oct 2024 18:51:09.840 * Running mode=standalone, port=13000.
+29986:M 01 Oct 2024 18:51:09.840 # Server initialized
+29986:M 01 Oct 2024 18:51:09.840 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+29986:M 01 Oct 2024 18:51:09.842 * Ready to accept connections
+1320:C 02 Oct 2024 08:47:00.843 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1320:C 02 Oct 2024 08:47:00.987 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=1320, just started
+1320:C 02 Oct 2024 08:47:00.987 # Configuration loaded
+1320:M 02 Oct 2024 08:47:00.988 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+1320:M 02 Oct 2024 08:47:01.431 * Running mode=standalone, port=13000.
+1320:M 02 Oct 2024 08:47:01.431 # Server initialized
+1320:M 02 Oct 2024 08:47:01.431 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+1320:M 02 Oct 2024 08:47:01.590 * Ready to accept connections
+1320:signal-handler (1727966897) Received SIGTERM scheduling shutdown...
+1320:M 03 Oct 2024 10:48:17.241 # User requested shutdown...
+1320:M 03 Oct 2024 10:48:17.246 * Removing the pid file.
+1320:M 03 Oct 2024 10:48:17.374 # Redis is now ready to exit, bye bye...
+311600:C 03 Oct 2024 10:48:18.758 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+311600:C 03 Oct 2024 10:48:18.758 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=311600, just started
+311600:C 03 Oct 2024 10:48:18.758 # Configuration loaded
+311600:M 03 Oct 2024 10:48:18.758 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+311600:M 03 Oct 2024 10:48:19.096 * Running mode=standalone, port=13000.
+311600:M 03 Oct 2024 10:48:19.097 # Server initialized
+311600:M 03 Oct 2024 10:48:19.097 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+311600:M 03 Oct 2024 10:48:19.133 * Ready to accept connections
+311600:signal-handler (1727968293) Received SIGTERM scheduling shutdown...
+311600:M 03 Oct 2024 11:11:33.028 # User requested shutdown...
+311600:M 03 Oct 2024 11:11:33.028 * Removing the pid file.
+311600:M 03 Oct 2024 11:11:33.051 # Redis is now ready to exit, bye bye...
+311783:C 03 Oct 2024 11:11:35.257 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+311783:C 03 Oct 2024 11:11:35.257 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=311783, just started
+311783:C 03 Oct 2024 11:11:35.257 # Configuration loaded
+311783:M 03 Oct 2024 11:11:35.257 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+311783:M 03 Oct 2024 11:11:35.258 * Running mode=standalone, port=13000.
+311783:M 03 Oct 2024 11:11:35.258 # Server initialized
+311783:M 03 Oct 2024 11:11:35.258 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+311783:M 03 Oct 2024 11:11:35.260 * Ready to accept connections
+3405:C 03 Oct 2024 20:20:37.148 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3405:C 03 Oct 2024 20:20:37.623 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=3405, just started
+3405:C 03 Oct 2024 20:20:37.623 # Configuration loaded
+3405:M 03 Oct 2024 20:20:37.623 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+3405:M 03 Oct 2024 20:20:38.548 * Running mode=standalone, port=13000.
+3405:M 03 Oct 2024 20:20:38.548 # Server initialized
+3405:M 03 Oct 2024 20:20:38.548 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+3405:M 03 Oct 2024 20:20:38.727 * Ready to accept connections
+3600:C 03 Oct 2024 20:22:50.104 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+3600:C 03 Oct 2024 20:22:50.104 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=3600, just started
+3600:C 03 Oct 2024 20:22:50.104 # Configuration loaded
+3600:M 03 Oct 2024 20:22:50.105 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+3600:M 03 Oct 2024 20:22:50.105 # Could not create server TCP listening socket 127.0.0.1:13000: bind: Address already in use
+1337:C 04 Oct 2024 08:52:06.756 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1337:C 04 Oct 2024 08:52:06.828 # Redis version=6.0.16, bits=64, commit=00000000, modified=0, pid=1337, just started
+1337:C 04 Oct 2024 08:52:06.828 # Configuration loaded
+1337:M 04 Oct 2024 08:52:06.829 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+1337:M 04 Oct 2024 08:52:07.580 * Running mode=standalone, port=13000.
+1337:M 04 Oct 2024 08:52:07.580 # Server initialized
+1337:M 04 Oct 2024 08:52:07.581 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+1337:M 04 Oct 2024 08:52:07.611 * Ready to accept connections
