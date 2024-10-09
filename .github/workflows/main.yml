@@ -11,14 +11,9 @@ jobs:
 
     steps:
       - name: Checkout code
-<<<<<<< HEAD
         uses: actions/checkout@v3 # Updated to v3
-
-=======
-        uses: actions/checkout@v3
         with:
           fetch-depth: 0
->>>>>>> origin/main
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.8
         with:
