@@ -1,8 +1,31 @@
-sites/*/private/*
-sites/*/public/*
-sites/*/site_config.json
-sites/assets/*
-env/
+# Ignore log files and databases
+logs/
+*.log
+*.pid
+
+# Ignore assets and compiled files
+sites/assets/
+sites/*/public/
+sites/*/*.pyc
+sites/*/*.pyo
+
+# Ignore backups
+sites/*/private/backups/
+sites/*/private/files/
+sites/*/public/files/
+
+# Ignore config files
+config/pids/
+config/*.json
+
+# Ignore bench files
+bench.cfg
+.env
+
+# Ignore node modules
 node_modules/
-*.pyc
+apps/*/node_modules/
+
+# Ignore Python cache
 __pycache__/
+*.py[cod]
