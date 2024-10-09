@@ -29,9 +29,9 @@ jobs:
           python-version: '3.10'
 
       # Install Python dependencies
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+   #   - name: Install dependencies
+   #     run: |
+   #       pip install -r requirements.txt
       # Run tests (if you have tests)
       # - name: Run tests
       #   run: bench test
