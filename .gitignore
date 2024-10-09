@@ -1,0 +1,39 @@
+# Ignore log files and databases
+logs/
+*.log
+*.pid
+
+# Ignore assets and compiled files
+sites/assets/
+sites/*/public/
+sites/*/*.pyc
+sites/*/*.pyo
+
+# Ignore backups
+sites/*/private/backups/
+sites/*/private/files/
+sites/*/public/files/
+
+# Ignore config files
+config/pids/
+config/*.json
+
+# Ignore bench files
+bench.cfg
+.env
+
+# Ignore node modules
+node_modules/
+apps/*/node_modules/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore embedded git repositories
+/apps/frappe/
+/apps/erpnext/
+/apps/hrms/
+/apps/backup_apps/
+/MagicTable-ERP/
+/archived/
