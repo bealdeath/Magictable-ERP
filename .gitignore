@@ -29,3 +29,11 @@ apps/*/node_modules/
 # Ignore Python cache
 __pycache__/
 *.py[cod]
+
+# Ignore embedded git repositories
+/apps/frappe/
+/apps/erpnext/
+/apps/hrms/
+/apps/backup_apps/
+/MagicTable-ERP/
+/archived/
