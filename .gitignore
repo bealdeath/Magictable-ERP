@@ -1,0 +1,8 @@
+sites/*/private/*
+sites/*/public/*
+sites/*/site_config.json
+sites/assets/*
+env/
+node_modules/
+*.pyc
+__pycache__/

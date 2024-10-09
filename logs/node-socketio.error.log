@@ -34,3 +34,289 @@ Emitted 'error' event on RedisClient instance at:
     at Object.onceWrapper (events.js:520:26)
     at Socket.emit (events.js:400:28)
     at TCP.<anonymous> (net.js:686:12)
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'socket.io'
+Require stack:
+- /home/magic/frappe-bench/apps/frappe/realtime/index.js
+- /home/magic/frappe-bench/apps/frappe/socketio.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/magic/frappe-bench/apps/frappe/realtime/index.js:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/magic/frappe-bench/apps/frappe/realtime/index.js',
+    '/home/magic/frappe-bench/apps/frappe/socketio.js'
+  ]
+}
+
+Node.js v18.20.4
